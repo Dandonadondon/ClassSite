@@ -1,0 +1,106 @@
+/** * Important Browser Reset or normalise File used to standardise browser display **/
+@import url("normalize.css");
+
+/* Redefine existing Html styles */
+body{ /* font-size:smaller;
+        line-height:160%;
+        font-family: sans-serif: */
+        font:smaller/160% sans-serif;
+        color: #ff0a7c;
+        width:960px;
+     /* margin-top:0;
+        margin-right:auto;
+        margin-bottom:0;
+        margin-left:auto;
+        margin:0 auto 0 auto: */
+        margin:0 auto;}
+
+div img{width: 100%;}
+
+a{color: #ff44da;
+  text-decoration: none;}
+
+a:hover{ color: #ff0a7c;}
+
+header ul{text-align:center;
+       /* padding-top:0;
+          padding-right: 0;
+          padding-bottom:0;
+          padding-left: 0;
+          padding:0 0;     */
+          padding:0;
+       /* margin-top:24px;
+          margin-right:0;
+          margin-bottom:24px;
+          margin-left:0;     */
+          margin:24px 0;
+          height: 24px;
+          list-style:none;}
+
+header li{width:140px;
+          float:left;
+          text-align: center;
+       /* margin-right: 10px;
+          margin-left: 10px; */
+          margin:0 10px;}
+
+header a{text-decoration:none;
+         color: #ff44da;
+         background-color: #fffb03;
+         display: block;
+      /* padding-top: 5px;
+         padding-bottom: 5px; */
+         padding:5px 0;}
+
+
+header a:hover{background-color:#fffb03;
+               color: #ff0a7c;}
+
+h1{/*padding-top:24px;
+     padding-right:10px;
+     padding-bottom:24px;
+     padding-left:10px;
+     padding:24px 10px 24px 10px; */
+     padding:24px 10px;}
+
+div img{width: 100%;}
+
+footer ul{ text-align: center;
+        /* padding-top:0;
+           padding-right:0;
+           padding-bottom:0;
+           padding-left:0;
+           padding:0 0;      */
+           padding:0;
+        /* margin-top:24px;
+           margin-right:0;
+           margin-bottom:24px;
+           margin-left:0;      */
+           margin: 24px 0;
+           height:24px;
+           list-style: none;}
+
+footer li{ width:460px;
+           float:left;
+          /* margin-right:10px;
+           margin-left:10px;*/
+           margin:0 10px;}
+
+footer a{ text-decoration: none;
+          color: #ff44da;
+          background-color: #fffb03;
+          display: block;
+          /* padding-top:5px;
+             padding-bottom:5px;*/
+            padding:5px 0;}
+
+footer a:hover{ background-color: #ff0a7c;
+                color: #fefcff;}
+
+footer p{ padding: 10px;}
+
+/* Class based styles */
+
+/* ID based styles */
+
+/* Style changes for larger displays or devices */
