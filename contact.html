@@ -4,6 +4,14 @@
     <meta charset="UTF-8"/>
     <title>Contact Arrow Photography</title>
     <link href="assets/css/styles.css" rel="stylesheet" media="all"/>
+    <style>form.table{display:table;
+        width:800px;
+        margin:24px auto;}
+    label.row{display:table-row;}
+    .cell{display:table-cell;
+        width:75%}
+    span.cell{width:25%}
+    input,textarea{width:100%}</style>
 </head>
 <body>
 <div id="page" class="container">
@@ -24,6 +32,16 @@
         <div class="first section">
             <p><img src="assets/images/ArrowPhotograhyFrontPage4.jpg" alt="Wedding photography" /></p>
             <h2>Contact Arrow Photography</h2>
+            <form class="table" method="get" action="http://webdesignstudents.co.uk/students/response.php">
+                <label class="row"> <span class="cell">*Name:</span>
+                    <input class="cell" type="text" name="contactname" /> </label>
+                <label class="row"> <span class="cell">Email:</span>
+                    <input class="cell" type="text" name="conactemail" /> </label>
+                <label class="row"> <span class="cell">*Comment:</span>
+                    <textarea class="cell" name="comment" cols="18" rows="8"></textarea></label>
+                <label class="row"> <span class="cell">*Required information</span>
+                    <input class="cell" type="submit" name="submit" /> </label>
+            </form>
         </div>
     </div>
     <footer>

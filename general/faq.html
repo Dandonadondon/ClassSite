@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Arrow Photography's Frequently Asked Questions</title>
+    <style>form.table{display:table;
+                      width:800px;
+                      margin:24px auto;}
+            label.row{display:table-row;}
+            .cell{display:table-cell;
+                  width:75%}
+            span.cell{width:25%}
+            input,textarea{width:100%}</style>
 </head>
 <body>
 <div id="page" class="container">
     <header>
+        <div class="container">
+
+        </div>
         <h1><span>Arrow Photography</span></h1>
         <nav>
             <ul>
@@ -25,6 +36,16 @@
         </p>
         <section class="first">
         <h2>Arrow Photography's Frequently Asked Questions</h2>
+          <form class="table" method="get" action="http://webdesignstudents.co.uk/students/response.php">
+          <label class="row"> <span class="cell">*Name:</span>
+                              <input class="cell" type="text" name="contactname" /> </label>
+          <label class="row"> <span class="cell">Email:</span>
+                              <input class="cell" type="text" name="conactemail" /> </label>
+          <label class="row"> <span class="cell">*Comment:</span>
+                              <textarea class="cell" name="comment" cols="18" rows="8"></textarea></label>
+          <label class="row"> <span class="cell">*Required information</span>
+                              <input class="cell" type="submit" name="submit" /> </label>
+          </form>
         </section>
     </div>
     <footer>
