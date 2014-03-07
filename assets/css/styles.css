@@ -1,76 +1,58 @@
 /** * Important Browser Reset or normalise File used to standardise browser display **/
 @import url("normalize.css");
+/* Mobile first */
 
 /* Redefine existing Html styles */
-body{font:smaller/160% sans-serif;
+body{font:large/160% sans-serif;
+     font-family: 'Vampiro One', cursive;
      color: #ff0a7c;
-     width:960px;
+     max-width:960px;
      margin:0 auto;}
 
-header,footer
+header,footer{clear:both;}
 
-div img{width: 100%;}
+nav ul{text-align:center;
+       padding:0;
+       margin:24px 0;
+       height: 24px;
+       list-style:none;}
 
-a{color: #ff44da;
-  text-decoration: none;}
+nav li{width:480px;
+       float:left;
+       text-align: center;
+       margin:0 2%;}
 
-a:hover{ color: #ff0a7c;}
+nav a{text-decoration:none;
+      color: #ff0a7c;
+      background-color: #fffb03;
+      display: block;
+      padding:5px 0;}
 
-header ul{text-align:center;
-          padding:0;
-          margin:24px 0;
-          height: 24px;
-          list-style:none;}
+nav a:hover{background-color:#fffb03;
+    color: #ff0a7c;}
 
-header li{width:140px;
-          float:left;
-          text-align: center;
-          margin:0 10px;}
-
-header a{text-decoration:none;
-         color: #ff44da;
-         background-color: #fffb03;
-         display: block;
-         padding:5px 0;}
-
-
-header a:hover{background-color:#fffb03;
-               color: #ff0a7c;}
+footer li{width:480px;}
 
 h1{padding:24px 10px;}
 
-div img{width: 100%;}
-
-footer ul{ text-align: center;
-           padding:0;
-           margin: 24px 0;
-           height:24px;
-           list-style: none;}
-
-footer li{ width:460px;
-           float:left;
-           margin:0 10px;}
-
-footer a{ text-decoration: none;
-          color: #ff44da;
-          background-color: #fffb03;
-          display: block;
-          padding:5px 0;}
-
-footer a:hover{ background-color: #ff0a7c;
-                color: #fefcff;}
-
-h1{padding:24px 10px }
-
 div img{width:100%;}
 
-footer p{ padding: 10px;}
+footer p{padding:10px;}
 
 /* Class based styles */
-section .subsection{width:460px;
-                       margin:24px 10px;
-                       float: left;}
+section .subsection{width:96%;
+                    margin:24px 2%;
+                    float: left;}
+/* ID based styles #00 */
 
-/* ID based styles */
+/* Lanscape mobile / tablet screens */
+@media(min-width:768px)
+{nav li{width:12.66%;}
+    footer li{width:46%;}}
+
+/* Lanscape mobile / tablet screens */
+@media(min-width:940px)
+{body{max-width:940px;}
+section .subsection{width:46%;}}
 
 /* Style changes for larger displays or devices */
