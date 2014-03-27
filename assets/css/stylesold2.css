@@ -1,0 +1,31 @@
+@import "reset.css";
+header {
+  background-image: -webkit-linear-gradient(#c502f7, #ff0a7c);
+  background-image: -moz-linear-gradient(#c502f7, #ff0a7c);
+  background-image: -ms-linear-gradient(#c502f7, #ff0a7c);
+  background-image: -o-linear-gradient(#c502f7, #ff0a7c);
+  background-image: linear-gradient(#c502f7, #ff0a7c);
+}
+header h1 {
+  color: #ff0a7c;
+}
+header nav {
+  background-image: -webkit-linear-gradient(#ff72e8, #ff46b5);
+  background-image: -moz-linear-gradient(#ff72e8, #ff46b5);
+  background-image: -ms-linear-gradient(#ff72e8, #ff46b5);
+  background-image: -o-linear-gradient(#ff72e8, #ff46b5);
+  background-image: linear-gradient(#ff72e8, #ff46b5);
+}
+header nav ul {
+  height: 24px;
+}
+header nav ul li {
+  width: 160px;
+  float: left;
+}
+header nav ul li a {
+  color: #ff46b5;
+  text-decoration: none;
+  padding: 4px 0;
+  display: block;
+}

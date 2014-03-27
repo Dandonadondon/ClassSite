@@ -1,0 +1,58 @@
+/** * Important Browser Reset or normalise File used to standardise browser display **/
+@import url("normalize.css");
+/* Mobile first */
+
+/* Redefine existing Html styles */
+body{font:large/160% sans-serif;
+     font-family: 'Vampiro One', cursive;
+     color: #ff0a7c;
+     max-width:960px;
+     margin:0 auto;}
+
+header,footer{clear:both;}
+
+nav ul{text-align:center;
+       padding:0;
+       margin:24px 0;
+       height: 24px;
+       list-style:none;}
+
+nav li{width:480px;
+       float:left;
+       text-align: center;
+       margin:0 2%;}
+
+nav a{text-decoration:none;
+      color: #ff0a7c;
+      background-color: #fffb03;
+      display: block;
+      padding:5px 0;}
+
+nav a:hover{background-color:#fffb03;
+    color: #ff0a7c;}
+
+footer li{width:480px;}
+
+h1{padding:24px 10px;}
+
+div img{width:100%;}
+
+footer p{padding:10px;}
+
+/* Class based styles */
+section .subsection{width:96%;
+                    margin:24px 2%;
+                    float: left;}
+/* ID based styles #00 */
+
+/* Lanscape mobile / tablet screens */
+@media(min-width:768px)
+{nav li{width:12.66%;}
+    footer li{width:46%;}}
+
+/* Lanscape mobile / tablet screens */
+@media(min-width:940px)
+{body{max-width:940px;}
+section .subsection{width:46%;}}
+
+/* Style changes for larger displays or devices */

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>CSS Positioning</title>
+    <style>
+        body{width:800px;
+             margin-right:auto;
+             margin-left:auto;}
+        div#page {
+         position:relative;
+         width:800px;
+         right:auto;
+         left:auto;
+       }
+        *{outline:solid 1px #ff0a81;}
+        h1{padding:20px 0;}
+        a{outline:none;}
+        section.first p.two{
+            width:300px;
+            height:300px;
+            position:static; /* relative, absolute, fixed */
+            top:4px;
+            left:500px;
+            background-color:deeppink;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper" class="container">
+<header>
+    <h1> Arrow Photography </h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portifolio/index.html">Portfolio</a></li>
+            <li><a href="packages/index.html">Packages</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="content" class="container">
+      <section class="first">
+          <h2>top</h2>
+          <p class="one">pharagraph</p>
+          <p class="two">pharagraph</p>
+          <p class="three">pharagraph</p>
+          <p class="four">pharagraph</p>
+       </section>
+      <section class="second">
+          <h2>Middle</h2>
+          <p class="one">pharagraph</p>
+          <p class="two">pharagraph</p>
+          <p class="three">pharagraph</p>
+          <p class="four">pharagraph</p>
+       </section>
+      <section class="third">
+          <h2>Bottom</h2>
+          <p class="one">pharagraph</p>
+          <p class="two">pharagraph</p>
+          <p class="three">pharagraph</p>
+          <p class="four">pharagraph</p>
+    </section>
+</div>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="general/terms.html">Terms &amp; Conditions</a></li>
+            <li><abbr title="Frequently Asked Questions"><a href="general/faq.html">FAQ</a></abbr></li>
+        </ul>
+    </nav>
+    <p> &copy;2000 - 2014 Arrow Photography. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,58 +1,150 @@
-/** * Important Browser Reset or normalise File used to standardise browser display **/
-@import url("normalize.css");
-/* Mobile first */
-
-/* Redefine existing Html styles */
-body{font:large/160% sans-serif;
-     font-family: 'Vampiro One', cursive;
-     color: #ff0a7c;
-     max-width:960px;
-     margin:0 auto;}
-
-header,footer{clear:both;}
-
-nav ul{text-align:center;
-       padding:0;
-       margin:24px 0;
-       height: 24px;
-       list-style:none;}
-
-nav li{width:480px;
-       float:left;
-       text-align: center;
-       margin:0 2%;}
-
-nav a{text-decoration:none;
-      color: #ff0a7c;
-      background-color: #fffb03;
-      display: block;
-      padding:5px 0;}
-
-nav a:hover{background-color:#fffb03;
-    color: #ff0a7c;}
-
-footer li{width:480px;}
-
-h1{padding:24px 10px;}
-
-div img{width:100%;}
-
-footer p{padding:10px;}
-
-/* Class based styles */
-section .subsection{width:96%;
-                    margin:24px 2%;
-                    float: left;}
-/* ID based styles #00 */
-
-/* Lanscape mobile / tablet screens */
-@media(min-width:768px)
-{nav li{width:12.66%;}
-    footer li{width:46%;}}
-
-/* Lanscape mobile / tablet screens */
-@media(min-width:940px)
-{body{max-width:940px;}
-section .subsection{width:46%;}}
-
-/* Style changes for larger displays or devices */
+@import url("reset.css");
+@import url('http://fonts.googleapis.com/css?family=Vampiro+One');
+/* Variables and mixins */
+#page {
+  position: relative;
+  width: 100%;
+  left: auto;
+  right: auto;
+}
+.basefont {
+  font: 16px/1.5 'Vampiro One', cursive;
+  color: #ff0081;
+}
+body {
+  font: 14px/1.5 'Vampiro One', cursive;
+  color: #ff0081;
+  width: 100%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+header {
+  background-color: #ff0081;
+}
+header h1 {
+  font-size: 24px;
+  padding: 24px;
+  background: #fffecf;
+  text-align: center;
+}
+header nav li {
+  width: 100%;
+  text-align: center;
+}
+header nav li a {
+  display: block;
+  padding: 6px 0;
+  background-color: #fffb03;
+  color: #ff0081;
+  text-decoration: none;
+}
+section {
+  clear: both;
+}
+section h2 {
+  font-size: 24px;
+  padding: 24px 0;
+}
+section p img {
+  width: 100%;
+}
+section.second p {
+  margin: 24px 16px;
+}
+section.second p a {
+  color: #ff66b3;
+  text-decoration: none;
+  font-weight: 600;
+}
+section.second p img {
+  border-radius: 50%;
+}
+footer {
+  clear: both;
+}
+footer nav {
+  width: 100%;
+}
+footer nav li {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+footer nav li a {
+  display: block;
+  padding: 6px 0;
+  background-color: #fffb03;
+  color: #ff0081;
+  text-decoration: none;
+}
+@media (min-width: 481px) {
+  body {
+    font-size: 16px;
+    width: 750px;
+  }
+  header {
+    clear: both;
+  }
+  header h1 {
+    width: 290px;
+    float: left;
+    padding: 34px 20px;
+  }
+  header nav {
+    width: 420px;
+    float: right;
+  }
+  header nav li {
+    width: 140px;
+    float: left;
+  }
+  header nav li a {
+    padding: 14px 0;
+  }
+  section {
+    clear: both;
+  }
+  section.second p {
+    width: 290px;
+    float: left;
+  }
+  section.second p + p {
+    width: 396px;
+    float: right;
+  }
+  section div {
+    clear: both;
+  }
+  footer {
+    clear: both;
+  }
+  footer ul li {
+    width: 50%;
+  }
+  footer ul + ul li {
+    width: 140px;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    width: 960px;
+  }
+  header h1 {
+    width: 290px;
+    padding: 8px 20px;
+    text-align: left;
+  }
+  header nav {
+    width: 630px;
+  }
+  header nav li {
+    width: 105px;
+  }
+}
+section.second p + p {
+  width: 606px;
+}

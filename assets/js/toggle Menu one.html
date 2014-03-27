@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Toggle Menu One</title>
+    <script>
+        function hideItems(){
+            currItem = document.getElementsByTagName(cuurElement);
+            for(i=0;i<currItem.lenth;i=i+1){
+                if(currItem[i].className== 'hidden'){
+                    currItem[i].style.display = 'none';
+                }
+            }
+        }
+        var oldMenu = null;
+        function toggleMenu(menuId){
+            currMenu = document.getElementById(menuId);
+            if(currMenu.style.display == 'block'){
+                currMenu.style.display ='none';
+            }else{
+            if(oldMenu){
+                oldMenu.style.display ='none';
+            }
+            currMenu.style.display = 'block';
+            oldMenu = currMenu;
+         }
+            return false ;
+        }
+    </script>
+</head>
+<body onload="hideItems('ul'),toggleMenu('top')">
+    <h1>Toggle Menu One</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Menu one</a></li>
+            <li><a href="#" onclick="toggleMenu('top')">Menu two</a>
+                <ul class="hidden" id="top">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </li>
+            <li><a href="#">Menu three</a></li>
+            <li><a href="http://google.com" onclick="return toggleMenu('bottom')">Menu four</a>
+                <ul class="hidden" id="bottom">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <h2>Content Starts Here</h2>
+
+</body>
+</html>

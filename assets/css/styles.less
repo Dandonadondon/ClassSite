@@ -1,0 +1,161 @@
+@import url("reset.css");
+
+@import url('http://fonts.googleapis.com/css?family=Vampiro+One');
+/* Variables and mixins */
+#page {
+  position:relative;
+  width:100%;
+  left:auto;
+  right:auto;
+}
+
+@basecolour: #ff0081;
+.basefont{font:16px/1.5 'Vampiro One', cursive;
+  color:@basecolour;}
+
+body{
+  font: 14px/1.5 'Vampiro One', cursive;
+  color:@basecolour;
+  width:100%;
+  margin:0 auto;}
+
+h1,h2,h3{font-weight:600;}
+
+header{
+  background-color:@basecolour;
+
+  h1{
+    font-size:24px;
+    padding:24px;
+    background:lighten(#fffb03,40%);
+    text-align:center;
+  }
+  nav{
+    li{
+      width:100%;
+      text-align:center;
+      a{display:block;
+        padding:6px 0;
+        background-color: #fffb03;
+        color:lighten(@basecolour,0%);
+        text-decoration:none;
+      }
+    }
+  }
+}
+section{
+  clear:both;
+  h2{font-size:24px;
+    padding:24px 0;
+  }
+  p img{
+    width:100%
+  }
+  &.second p{
+    margin:24px 16px;
+    a{
+      color:lighten(@basecolour,20%);
+      text-decoration:none;
+      font-weight:600;
+    }
+    img {
+     -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+     border-radius:50%;
+    }
+  }
+}
+footer{
+  clear:both;
+  nav{
+    width: 100%;
+
+  li{
+    width:50%;
+    float:left;
+    text-align:center;
+    a{
+      display:block;
+      padding:6px 0;
+      background-color:#fffb03;
+      color:lighten(@basecolour,0%);
+      text-decoration:none;
+    }
+    }
+  }
+}
+@media(min-width:481px){
+  body{
+    font-size:16px;
+    width:750px;
+  }
+  header{
+    clear:both;
+    h1{
+      width:290px;
+      float:left;
+      padding:34px 20px;
+    }
+    nav{
+      width:420px;
+      float:right;
+      li{
+        width:140px;
+        float:left;
+        a{
+          padding:14px 0;
+        }
+      }
+    }
+  }
+  section{
+    clear:both;
+    &.second p{
+      width:290px;
+      float:left;
+    }
+    &.second p+p{
+      width:396px;
+      float:right;
+    }
+    div{
+      clear:both;
+    }
+  }
+  footer{
+    clear: both;
+    ul{
+      li{
+        width: 50%;
+      }
+    }
+    ul+ul{
+
+      li{
+      width: 140px;
+      }
+    }
+  }
+}
+@media(min-width:960px){
+  body{
+    width:960px;
+  }
+  header{
+    h1{
+      width:290px;
+      padding:8px 20px;
+      text-align:left;}
+
+  nav{
+    width:630px;
+    li{
+      width:105px;
+    }
+  }}
+}
+section{
+  &.second p+p{
+    width:606px;
+  }
+}

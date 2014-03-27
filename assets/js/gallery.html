@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title> JavaScript Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function hideItem(element,classname){
+            currElement = document.getElementsByTagName(element);
+            for(i=0;i<currElement.length;i=i+1){
+                if(currElement[i].className== classname){
+                    currElement[i].style.display = 'none';
+                }
+            }
+        }
+        var oldItem = null;
+        function toggleItem(currId){
+            currItem = document.getElementById(currId).style;
+            if(currItem.display == 'block'){
+                currItem.display ='none';
+            }else{
+                if(oldItem){
+                    oldItem.display ='none';
+                }
+                currItem.display = 'block';
+                oldItem = currItem;
+            }
+            return false ;
+        }
+    </script>
+    <style>
+        body{
+            width:960px;
+            margin:0 auto;
+        }
+        #page{
+            width:960px;
+            position:relative;
+            top:0;
+            right:auto;
+            left:auto;
+        }
+        p img{
+            width:100%;
+        }
+        .thumbnail{
+            width:100px;
+        }
+        .hidden{
+            position:absolute;
+            top:230px;
+            left:350px;
+            width:300px;
+        }
+    </style>
+</head>
+<body onload="hideItem('p','hidden preview'),toggleItem('gallone')">
+    <div id="page" class="container">
+        <header>
+            <h1>Exaple JavaScript Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                    <li><a href="../../portifolio/index.html">Portfolio</a></li>
+                    <li><a href="../../packages/index.html">Packages</a></li>
+                    <li><a href="../../news.html">News</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content" class="container">
+            <h2>Adele and john's Gallery - Click thumbnail to view</h2>
+            <p class="thumbnail"><a href="#" onclick="toggleItem('gallone')"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding1.jpg"/></a></p>
+            <p class="hidden preview" id="gallone"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding1.jpg"/></p>
+            <p class="thumbnail"><a href="#" onclick="toggleItem('galltwo')"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg"/></a></p>
+            <p class="hidden preview" id="galltwo"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding2.jpg"/></p>
+            <p class="thumbnail"><a href="#" onclick="toggleItem('gallthree')"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg"/></a></p>
+            <p class="hidden preview" id="gallthree"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding3.jpg"/></p>
+            <p class="thumbnail"><a href="#" onclick="toggleItem('gallfour')"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg"/></a></p>
+            <p class="hidden preview" id="gallfour"><img src="../../portifolio/weddings/AdeleandJohn/images/AdeleandJohnWedding4.jpg"/></p>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="../../general/terms.html">terms &amp;conditions</a></li>
+                    <li><abbr title="Frequently Asked Questions"><a href="../../general/faq.html">FAQ</a></abbr></li>
+                </ul>
+            </nav>
+            <p>&copy;2000 - 2014 Arrow Photography . All rights reserved</p>
+        </footer>
+
+    </div>
+</body>
+</html>

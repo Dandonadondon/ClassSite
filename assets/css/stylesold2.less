@@ -1,0 +1,27 @@
+@import "reset.css";
+
+@page:100%;
+@basecolour: #ff0a7c;
+@lightcolor: lighten(@basecolour,25%);
+@darkcolor: darken(@basecolour,25%);
+.gradient(@light,@dark){background-image:-webkit-linear-gradient(@light,@dark);
+  background-image:-moz-linear-gradient(@light,@dark);
+  background-image:-ms-linear-gradient(@light,@dark);
+  background-image:-o-linear-gradient(@light,@dark);
+  background-image:linear-gradient(@light,@dark);}
+
+header{.gradient(#c502f7,#ff0a7c);
+  h1{color: @basecolour;}
+  nav{.gradient(#ff72e1,#FF46B5);
+    ul{height:24px;
+      li{width:@page/6;
+         float: left;
+        a{color: @darkcolor;
+          text-decoration:none;
+          padding: 4px 0;
+          display:block;
+        }
+      }
+    }
+  }
+}
